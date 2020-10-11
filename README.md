@@ -2,7 +2,7 @@
 
 
 
-<img align="left" src="https://github.com/alxrguz/ALProgressRing/blob/main/Assets/PreviewBanner.gif" width="450"/>
+<img align="left" src="https://github.com/alxrguz/ALProgressRing/blob/main/Assets/PreviewBanner.gif" width="300"/>
 
 ### About
 
@@ -17,6 +17,7 @@ Also for this library, I added about 20 functions for animation, more details in
 <br/>
 
 If you liked this library, please do not forget to put a `★ star`, it will help me in its development.
+
 <br/>
 
 <br/>

@@ -60,15 +60,15 @@ https://github.com/alxrguz/ALProgressRing
 
 #### CocoaPods
 
-**ALProgressRing** is available through [CocoaPods](http://cocoapods.org/). To install it, simply add the following line to your Podfile:
+**ALProgressRing** is available through [CocoaPods](https://cocoapods.org/pods/ALProgressRing). To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ALRadioButtons'
+pod 'ALProgressRing'
 ```
 
 #### Manually
 
-If you prefer not to use either of the aforementioned dependency managers, you can integrate SnapKit into your project manually. Put `Source/ALProgressRing` folder in your Xcode project. 
+If you prefer not to use either of the aforementioned dependency managers, you can integrate ALProgressRing into your project manually. Put `Source/ALProgressRing` folder in your Xcode project. 
 
 
 

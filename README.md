@@ -6,7 +6,12 @@
 
 ### About
 
+**ALProgressRing** - is a library for displaying a circular progress ring. 
 
+It's easy to customize. You can adjust the gradient for the ring, line width, shadow, and more.
+Also for this library, I added about 20 functions for animation, more details in the [Animation](#Animation) section
+
+<br/>
 
 <br/>
 
@@ -26,8 +31,8 @@ If you liked this library, please do not forget to put a `★ star`, it will hel
   - [Quick Start](#Quick-Start)
   - [Customization](#Customization)
     - [Colors](#colors)
-    - [Fonts](#Fonts)
     - [Layout](#Layout)
+    - [Animation](#Animation)
 - [License](https://github.com/SnapKit/SnapKit#license)
 
 ## 
@@ -80,11 +85,11 @@ class MyViewController: UIViewController {
         super.viewDidLoad()
 
         view.addSubview(progressRing)
-        // ... Setup layout
+        // Setup layout
         progressRing.translatesAutoresizingMaskIntoConstraints = false
         progressRing.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         progressRing.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-      // Make sure to set the view size
+      	// Make sure to set the view size
         progressRing.widthAnchor.constraint(equalToConstant: 180).isActive = true
         progressRing.heightAnchor.constraint(equalToConstant: 180).isActive = true
         
@@ -130,7 +135,8 @@ progressRing.endGradientPoint = .init(x: 0.5, y: 1) // The ending position of th
 progressRing.duration = 2 // Duration of the ring's fill animation.
 progressRing.timingFunction = .easeOutExpo // Timing function of the ring's fill animation.
 
-// The following use of setProgress (_ value: Int, animated: Bool) will take into account the new parameters 
+/// The following use of setProgress (_ value: Int, animated: Bool) 
+/// will take into account the new parameters 
 progressRing.setProgress(0.8, animated: true)
 ```
 
@@ -142,4 +148,5 @@ There is a good cheat sheet available [here](http://easings.net/).
 
 ## License
 
-**ALRadioButtons** is under MIT license. See the [LICENSE](https://github.com/alxrguz/ALRadioButtons/blob/master/LICENSE) file for more info.
+**ALProgressRing** is under MIT license. See the [LICENSE](https://github.com/alxrguz/ALProgressRing/blob/main/LICENSE) file for more info.
+

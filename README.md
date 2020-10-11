@@ -9,6 +9,7 @@
 **ALProgressRing** - is a library for displaying a circular progress ring. 
 
 It's easy to customize. You can adjust the gradient for the ring, line width, shadow, and more.
+
 Also for this library, I added about 20 functions for animation, more details in the [Animation](#Animation) section
 
 <br/>

@@ -2,7 +2,7 @@
 
 
 
-<img align="left" src="https://github.com/alxrguz/ALRadioButtons/blob/master/Assets/PreviewBanner.gif" width="450"/>
+<img align="left" src="https://github.com/alxrguz/ALProgressRing/blob/main/Assets/PreviewBanner.gif" width="450"/>
 
 ### About
 
@@ -136,7 +136,7 @@ progressRing.setProgress(0.8, animated: true)
 
 Let's take a look at the `timingFunction` parameter, it is of type `ALTimingFunction`, which contains the following types of animations:
 
-<img src="https://github.com/alxrguz/ALRadioButtons/blob/master/Assets/timingFunctions.png"/>
+<img src="https://github.com/alxrguz/ALProgressRing/blob/main/Assets/timingFunctions.png"/>
 
 There is a good cheat sheet available [here](http://easings.net/).
 

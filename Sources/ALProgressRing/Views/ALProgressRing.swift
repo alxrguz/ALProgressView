@@ -26,6 +26,16 @@ import UIKit
 open class ALProgressRing: UIView {
     
     // MARK: Properties
+    
+    /// Sets the line width for progress ring and groove ring.
+    /// - Note: If you need separate customization use the `ringWidth` and `grooveWidth` properties
+    public var lineWidth: CGFloat = 10 {
+        didSet {
+            ringWidth = lineWidth
+            grooveWidth = lineWidth
+        }
+    }
+    
     /// The line width of the progress ring.
     public var ringWidth: CGFloat = 10 {
         didSet {
@@ -82,8 +92,21 @@ open class ALProgressRing: UIView {
     public var timingFunction: ALTimingFunction = .easeOutExpo
 
     /// The radius of the ring.
-    public var radius: CGFloat {
-        return min(bounds.height, bounds.width) / 2 - ringWidth / 2
+    public var ringRadius: CGFloat {
+        var radius = min(bounds.height, bounds.width) / 2 - ringWidth / 2
+        if ringWidth < grooveWidth {
+            radius -= (grooveWidth - ringWidth) / 2
+        }
+        return radius
+    }
+    
+    /// The radius of the groove.
+    public var grooveRadius: CGFloat {
+        var radius = min(bounds.height, bounds.width) / 2 - grooveWidth / 2
+        if grooveWidth < ringWidth {
+            radius -= (ringWidth - grooveWidth) / 2
+        }
+        return radius
     }
     
     /// The progress of the ring between 0 and 1. The ring will fill based on the value.
@@ -196,8 +219,9 @@ open class ALProgressRing: UIView {
 
     private func configureRing() {
         let ringPath = self.ringPath()
+        let groovePath = self.groovePath()
         grooveLayer.frame = bounds
-        grooveLayer.path = ringPath
+        grooveLayer.path = groovePath
         
         ringLayer.frame = bounds
         ringLayer.path = ringPath
@@ -208,7 +232,13 @@ open class ALProgressRing: UIView {
 
     private func ringPath() -> CGPath {
         let center = CGPoint(x: bounds.origin.x + frame.width / 2.0, y: bounds.origin.y + frame.height / 2.0)
-        let circlePath = UIBezierPath(arcCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
+        let circlePath = UIBezierPath(arcCenter: center, radius: ringRadius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
+        return circlePath.cgPath
+    }
+    
+    private func groovePath() -> CGPath {
+        let center = CGPoint(x: bounds.origin.x + frame.width / 2.0, y: bounds.origin.y + frame.height / 2.0)
+        let circlePath = UIBezierPath(arcCenter: center, radius: grooveRadius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
         return circlePath.cgPath
     }
 }

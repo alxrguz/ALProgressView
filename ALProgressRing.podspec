@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name         = "ALProgressRing"
-spec.version      = "1.0.0"
+spec.version      = "1.1.0"
 spec.summary      = "Animated and fully customizable progress ring with gradient"
 
 spec.homepage     = "https://github.com/alxrguz/ALProgressRing"

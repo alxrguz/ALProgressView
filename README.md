@@ -127,8 +127,12 @@ progressRing.startAngle = -.pi / 2 // The start angle of the ring to begin drawi
 progressRing.endAngle = 1.5 * .pi // The end angle of the ring to end drawing. 
 progressRing.startGradientPoint = .init(x: 0.5, y: 0) // The starting poin of the gradient
 progressRing.endGradientPoint = .init(x: 0.5, y: 1) // The ending position of the gradient.
-progressRing.ringWidth = 10 // Width of the progress ring.
-progressRing.grooveWidth = 8 // Width of the background "groove" ring.
+
+// Sets the line width for progress ring and "groove" ring
+progressRing.lineWidth = 10
+// Or, if you need to separate these parameters, use
+progressRing.ringWidth = 10 
+progressRing.grooveWidth = 8 
 ```
 
 

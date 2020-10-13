@@ -26,11 +26,17 @@ import UIKit
 open class ALProgressRing: UIView {
     
     // MARK: Properties
-    /// The line width of the ring.
-    public var lineWidth: CGFloat = 10 {
+    /// The line width of the progress ring.
+    public var ringWidth: CGFloat = 10 {
         didSet {
-            ringLayer.lineWidth = lineWidth
-            grooveLayer.lineWidth = lineWidth
+            ringLayer.lineWidth = ringWidth
+        }
+    }
+
+    /// The line width of the groove ring.
+    public var grooveWidth: CGFloat = 10 {
+        didSet {
+            grooveLayer.lineWidth = grooveWidth
         }
     }
     
@@ -77,7 +83,7 @@ open class ALProgressRing: UIView {
 
     /// The radius of the ring.
     public var radius: CGFloat {
-        return min(bounds.height, bounds.width) / 2 - lineWidth / 2
+        return min(bounds.height, bounds.width) / 2 - ringWidth / 2
     }
     
     /// The progress of the ring between 0 and 1. The ring will fill based on the value.
@@ -172,12 +178,11 @@ open class ALProgressRing: UIView {
 
     private func styleRingLayer() {
         grooveLayer.strokeColor = grooveColor.cgColor
-        grooveLayer.lineWidth = lineWidth
+        grooveLayer.lineWidth = grooveWidth
         
-        ringLayer.lineWidth = lineWidth
+        ringLayer.lineWidth = ringWidth
         ringLayer.strokeColor = UIColor.black.cgColor
         ringLayer.strokeEnd = min(progress, 1.0)
-        ringLayer.lineWidth = lineWidth
         
         gradientLayer.colors = [startColor.cgColor, endColor.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0)

@@ -150,6 +150,7 @@ open class ALProgressRing: UIView {
     public override func layoutSubviews() {
         super.layoutSubviews()
         configureRing()
+        styleRingLayer()
     }
     
     public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -211,8 +212,6 @@ open class ALProgressRing: UIView {
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0)
         gradientLayer.endPoint = CGPoint(x: 0.0, y: 1)
         
-        gradientLayer.shadowOpacity = 0.4
-        gradientLayer.shadowRadius = 5
         gradientLayer.shadowColor = startColor.cgColor
         gradientLayer.shadowOffset = .zero
     }

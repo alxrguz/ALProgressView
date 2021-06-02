@@ -1,5 +1,22 @@
+# osX files
 .DS_Store
+.Trashes
+
+## Xcode Patch
+*.xcworkspace
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+
+### Xcode Patch ###
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# Swift Package Manager
+.swiftpm
 /.build
-/Packages
-/*.xcodeproj
-xcuserdata/
+
+## Build generated
+build/
+DerivedData/

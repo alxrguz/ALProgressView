@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ALDevKit",
+        "repositoryURL": "https://github.com/alxrguz/ALDevKit",
+        "state": {
+          "branch": "master",
+          "revision": "bf6a336574e6deabd4383307fe6254285bc87d97",
+          "version": null
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit",
+        "state": {
+          "branch": "develop",
+          "revision": "80cc5696a4862be87b49bdda83b3e6514b10fb16",
+          "version": null
+        }
+      },
+      {
+        "package": "SparrowKit",
+        "repositoryURL": "https://github.com/varabeis/SparrowKit",
+        "state": {
+          "branch": "main",
+          "revision": "9621aaf9698e91d540f0e67a44077c88cae630a3",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "ALProgressRing",
+    name: "ALProgressView",
     platforms: [
        .iOS(.v10)
     ],
     products: [
-        .library(name: "ALProgressRing", targets: ["ALProgressRing"]),
+        .library(name: "ALProgressView", targets: ["ALProgressView"]),
     ],
     targets: [
-        .target(name: "ALProgressRing"),
+        .target(name: "ALProgressView"),
     ]
 )

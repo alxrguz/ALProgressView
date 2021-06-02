@@ -2,7 +2,7 @@
 
 
 
-<img align="left" src="https://github.com/alxrguz/ALProgressView/blob/main/Assets/PreviewBanner.gif" width="300"/>
+<img align="left" src="https://github.com/alxrguz/ALProgressView/blob/main/Assets/PreviewBanner.png" width="300"/>
 
 ### About
 

@@ -22,6 +22,11 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         setupConstraints()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+            progressRing.setProgress(0.8, animated: true)
+            progressBar.setProgress(0.6, animated: true)
+        }
     }
 }
 
@@ -38,10 +43,6 @@ private extension MainViewController {
         setupColors()
         
         progressRing.lineWidth = 15
-        progressRing.setProgress(0.8, animated: true)
-        
-        progressBar.setProgress(0.6, animated: true)
-        
         
         emojiLabel.text = "✌️"
         emojiLabel.font = .systemFont(ofSize: 80, weight: .regular)

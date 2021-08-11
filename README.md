@@ -14,6 +14,7 @@ Also for this library, I added about 20 functions for animation, more details in
 
 <br/>
 <br/>
+
 If you liked this library, please do not forget to put a `★ star`, it will help me in its development.
 
 <br/>

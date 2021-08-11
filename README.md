@@ -13,12 +13,10 @@ It's easy to customize. You can adjust the gradient, line width, shadow, and mor
 Also for this library, I added about 20 functions for animation, more details in the [Animation](#Animation) section
 
 <br/>
-
-
+<br/>
 If you liked this library, please do not forget to put a `★ star`, it will help me in its development.
 
 <br/>
-
 
 ## Navigation
 

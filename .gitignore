@@ -1,6 +1,8 @@
 # osX files
 .DS_Store
 .Trashes
+Icon
+Icon?
 
 ## Xcode Patch
 *.xcworkspace

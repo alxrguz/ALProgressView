@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB22433626CB8F73008A80C8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BB22433526CB8F73008A80C8 /* SnapKit */; };
+		BB22433C26CB98E8008A80C8 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22433B26CB98E8008A80C8 /* AnimationViewController.swift */; };
 		BB3959F724EA71EE00B965F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3959F624EA71EE00B965F5 /* AppDelegate.swift */; };
 		BB3959FB24EA71EE00B965F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3959FA24EA71EE00B965F5 /* ViewController.swift */; };
 		BB395A0024EA71F200B965F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3959FF24EA71F200B965F5 /* Assets.xcassets */; };
@@ -15,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB22433B26CB98E8008A80C8 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		BB3959F324EA71EE00B965F5 /* iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3959F624EA71EE00B965F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB3959FA24EA71EE00B965F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,12 +33,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB65E1FF266669ED009B68D4 /* ALProgressView in Frameworks */,
+				BB22433626CB8F73008A80C8 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB22433726CB93EC008A80C8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		BB3959EA24EA71EE00B965F5 = {
 			isa = PBXGroup;
 			children = (
@@ -67,8 +78,10 @@
 		BB395A0A24EA722A00B965F5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BB22433726CB93EC008A80C8 /* Home */,
 				BB395A0D24EA727000B965F5 /* Launch */,
 				BB3959FA24EA71EE00B965F5 /* ViewController.swift */,
+				BB22433B26CB98E8008A80C8 /* AnimationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -115,6 +128,7 @@
 			name = "iOS App";
 			packageProductDependencies = (
 				BB65E1FE266669ED009B68D4 /* ALProgressView */,
+				BB22433526CB8F73008A80C8 /* SnapKit */,
 			);
 			productName = "Panda School";
 			productReference = BB3959F324EA71EE00B965F5 /* iOS App.app */;
@@ -145,6 +159,7 @@
 			);
 			mainGroup = BB3959EA24EA71EE00B965F5;
 			packageReferences = (
+				BB22433426CB8F73008A80C8 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = BB3959F424EA71EE00B965F5 /* Products */;
 			projectDirPath = "";
@@ -172,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB22433C26CB98E8008A80C8 /* AnimationViewController.swift in Sources */,
 				BB3959FB24EA71EE00B965F5 /* ViewController.swift in Sources */,
 				BB3959F724EA71EE00B965F5 /* AppDelegate.swift in Sources */,
 			);
@@ -366,7 +382,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		BB22433426CB8F73008A80C8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		BB22433526CB8F73008A80C8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB22433426CB8F73008A80C8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		BB65E1FE266669ED009B68D4 /* ALProgressView */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ALProgressView;

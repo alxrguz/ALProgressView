@@ -2,21 +2,9 @@
 
 
 
-<img align="left" src="https://github.com/alxrguz/ALProgressView/blob/main/Assets/PreviewBanner.png" width="300"/>
+<img align="left" src="Assets/about.png"/>
 
-### About
-
-**ALProgressView** - is a library for displaying a progress view with 2 styles: ring and bar. 
-
-It's easy to customize. You can adjust the gradient, line width, shadow, and more.
-
-Also for this library, I added about 20 functions for animation, more details in the [Animation](#Animation) section
-
-<br/>
-<br/>
-
-If you liked this library, please do not forget to put a `★ star`, it will help me in its development.
-<br/>
+  
 
 ## Navigation
 
@@ -35,7 +23,7 @@ If you liked this library, please do not forget to put a `★ star`, it will hel
     - [ALProgressBar](#ALProgressBar)
 - [License](#License)
 
-## 
+
 
 ## Requirements
 

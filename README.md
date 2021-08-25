@@ -2,7 +2,7 @@
 
 
 
-<img align="left" src="Assets/about.png"/>
+<img align="left" src="https://github.com/alxrguz/ALProgressView/blob/main/Assets/about.png"/>
 
   
 
